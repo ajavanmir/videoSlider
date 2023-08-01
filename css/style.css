@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "yekan";
+    src: url(../fonts/yekan.eot);
+    src: url(../fonts/yekan.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/yekan.ttf) format("truetype"),
+    url(../fonts/yekan.woff) format("woff");
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    direction: rtl;
+    font-family: "yekan";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #ffccbc;
+}
+section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+section video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+section .navigation{
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    display: flex;
+}
+section .navigation li{
+    list-style: none;
+    margin: 0 5px;
+    border: 5px solid #fff;
+    cursor: pointer;
+}
+section .navigation li:first-child{
+    margin-right: 0;
+}
+section .navigation li:last-child{
+    margin-left: 0;
+}
+section .navigation li img{
+    width: 200px;
+    height: 112px;
+    object-fit: cover;
+    opacity: 0.8;
+}
+section .navigation li:hover img{
+    opacity: 1;
+}
