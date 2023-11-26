@@ -1,3 +1,7 @@
+/*
+Copyright amir javanmir
+Released on: august 1, 2023
+*/
 window.onload = function(){
     let listItem = document.querySelector(".navigation");
     [...listItem.children].forEach(function(item){
